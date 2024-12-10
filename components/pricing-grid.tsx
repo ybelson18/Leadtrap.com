@@ -40,7 +40,7 @@ export const PricingGrid = () => {
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "30 day free trial",
+      ctaText: "30 Day Free Trial",
     },
     {
       title: "Pro+",
