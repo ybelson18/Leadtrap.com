@@ -11,10 +11,6 @@ export const Features = () => {
         <div className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
         </div>
-        <div className="flex justify-center items-center mb-2 text-[#00A0E9]">
-          <span className="mr-2">●</span>
-          <span className="font-medium">Currently in Private Beta</span>
-        </div>
         <h1 className="max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white pt-2 md:pt-4 text-4xl md:text-6xl">
           <span
             data-br=":R577puja:"

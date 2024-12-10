@@ -75,9 +75,13 @@ export const Hero = () => {
       className="flex flex-col min-h-[70rem] md:min-h-[100rem] pt-20 md:pt-40 relative overflow-hidden"
     >
       <Container className="flex  flex-col items-center justify-center">
+        <div className="flex justify-center items-center mb-1 text-[#00A0E9]">
+          <span className="mr-2">●</span>
+          <span className="font-medium">Currently in Private Beta</span>
+        </div>
         <Heading
           as="h1"
-          className="text-5xl md:text-6xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10 py-6"
+          className="text-5xl md:text-6xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10"
         >
           <span
             style={{
