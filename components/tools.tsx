@@ -153,10 +153,10 @@ export const Tools = () => {
       <motion.div className="flex flex-col gap-16 md:gap-24">
         <div>
           <Heading className="text-center text-white">
-            Nice website. Where are your leads?
+            Lead. Trap. Match.
           </Heading>
           <Subheading>
-            Stop paying for looks. Start paying for leads. We&apos;re all about filling up your pipeline with premium leads.
+          Stop chasing and start trapping. Our AI lead agent delivers qualified opportunities straight to your inbox daily, and then manages them for you.
           </Subheading>
         </div>
 
