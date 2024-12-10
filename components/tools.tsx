@@ -22,9 +22,9 @@ export const Tools = () => {
   const content = [
     {
       icon: <IconKarate className="h-8 w-8 text-secondary" />,
-      title: "Captures High-Intent Leads",
+      title: "Traps Leads",
       description:
-        "The moment a potential buyer shows intent, our AI pounces. No more leads ghosting you.",
+        "The moment a potential buyer shows intent, your agent pounces. No more leads ghosting you.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -39,9 +39,9 @@ export const Tools = () => {
     },
     {
       icon: <IconSearch className="h-8 w-8 text-secondary" />,
-      title: "Deep-Screens Every Prospect",
+      title: "Researches Every Prospect",
       description:
-        "While engaging, it's digging deep into who your customer is, what they'll spend, and how ready they are to buy. With proprietary information on virtually every lead, there's zero guesswork.",
+        "While engaging, your agent is digging deep into who your customer is, what they'll spend, and how ready they are to buy. It will find the relevant information on virtually every lead you need to close, so there's zero guesswork.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -58,7 +58,7 @@ export const Tools = () => {
       icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
       title: "Auto-Scores and Routes",
       description:
-        "Every lead gets scored and routed instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
+        "Your agent is scoring and routing leads instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -75,7 +75,7 @@ export const Tools = () => {
       icon: <IconMail className="h-8 w-8 text-secondary" />,
       title: "Manages Everything Automatically",
       description:
-        "While your competition is sleeping, it's sending follow-ups that are closing. Email and SMS that hit hard and fast.",
+        "While your competition is sleeping, your agent is sending personalized follow-ups that are closing. Email and SMS that hit hard and fast.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -92,7 +92,7 @@ export const Tools = () => {
       icon: <IconSunglassesFilled className="h-8 w-8 text-secondary" />,
       title: "You Get to Watch",
       description:
-        "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected payoff.",
+        "Watch your agent work its magic with your endless stream of premium, ready-to-close leads straight to your inbox, phone, or Slack. See exactly which prospects are worth pursuing and your expected payoff.",
       content: (
         <ImageContainer>
           <BlurImage

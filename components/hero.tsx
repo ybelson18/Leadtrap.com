@@ -89,7 +89,7 @@ export const Hero = () => {
             data-br=":R2l7puja:"
             data-brr="1"
           >
-            Stop Chasing Leads
+            Lead. Trap. Match.
           </span>
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 max-w-3xl mx-auto relative z-10">
