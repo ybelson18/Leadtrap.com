@@ -11,11 +11,11 @@ export const Features = () => {
         <div className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
         </div>
-        <div className="flex justify-center items-center mt-2 text-[#00A0E9]">
-          <span className="mr-2 text-[#00A0E9]">●</span>
-          <span className="text-[#00A0E9] font-medium">Currently in Private Beta</span>
+        <div className="flex justify-center items-center mb-2 text-[#00A0E9]">
+          <span className="mr-2">●</span>
+          <span className="font-medium">Currently in Private Beta</span>
         </div>
-        <h2 className="max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white pt-2 md:pt-4 text-4xl md:text-6xl">
+        <h1 className="max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white pt-2 md:pt-4 text-4xl md:text-6xl">
           <span
             data-br=":R577puja:"
             data-brr="1"
@@ -28,7 +28,7 @@ export const Features = () => {
           >
             Get Your First Premium Leads in Under Five Minutes
           </span>
-        </h2>
+        </h1>
         <h2 className="max-w-4xl my-1 md:my-4 mx-auto text-muted text-center font-normal text-lg md:text-2xl">
           <span
             data-br=":R777puja:"
