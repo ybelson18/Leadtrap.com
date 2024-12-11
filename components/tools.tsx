@@ -32,7 +32,7 @@ export const Tools = () => {
             alt="dashboard"
             height="1000"
             width="1000"
-            className="w-3/5 rounded-lg shadow-xl shadow-brand/[0.2]"
+            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
           />
         </ImageContainer>
       ),
@@ -66,7 +66,7 @@ export const Tools = () => {
             alt="dashboard"
             height="1000"
             width="1000"
-            className="w-4/5 rounded-lg shadow-xl shadow-brand/[0.2]"
+            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
           />
         </ImageContainer>
       ),
@@ -83,7 +83,7 @@ export const Tools = () => {
             alt="dashboard"
             width="1200"
             height="1000"
-            className="w-3/5 rounded-lg shadow-xl shadow-brand/[0.2]"
+            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
           />
         </ImageContainer>
       ),
@@ -100,7 +100,7 @@ export const Tools = () => {
             alt="dashboard"
             width="1200"
             height="1000"
-            className="w-4/5 rounded-lg shadow-xl shadow-brand/[0.2]"
+            className="w-full rounded-lg shadow-xl shadow-brand/[0.2]"
           />
         </ImageContainer>
       ),
