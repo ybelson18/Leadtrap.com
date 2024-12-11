@@ -22,7 +22,7 @@ export const Tools = () => {
   const content = [
     {
       icon: <IconKarate className="h-8 w-8 text-secondary" />,
-      title: "Traps Leads",
+      title: "Traps Your Leads",
       description:
         "The moment a potential buyer shows intent, your agent pounces. No more leads ghosting you.",
       content: (
@@ -73,7 +73,7 @@ export const Tools = () => {
     },
     {
       icon: <IconMail className="h-8 w-8 text-secondary" />,
-      title: "Manages Everything Automatically",
+      title: "Manages Your Leads Automatically",
       description:
         "While your competition is sleeping, your agent is sending personalized follow-ups that are closing. Email and SMS that hit hard and fast.",
       content: (
