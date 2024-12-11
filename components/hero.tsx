@@ -81,7 +81,7 @@ export const Hero = () => {
         </div>
         <Heading
           as="h1"
-          className="text-5xl md:text-6xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10"
+          className="text-5xl md:text-6xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10 leading-tight lg:leading-[1.1]"
         >
           <span
             style={{
