@@ -148,9 +148,9 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-      <div className="flex  items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20">
+      <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full">
         <div
-          className="w-full relative"
+          className="w-full relative overflow-x-hidden md:overflow-x-visible"
           style={{
             perspective: "1000px",
           }}
@@ -161,7 +161,7 @@ export const Hero = () => {
               alt="hero"
               height={1350}
               width={1920}
-              className="mx-auto rounded-md grayscale group-hover:grayscale-0 transition duration-200 object-cover object-top h-full md:h-full"
+              className="mx-auto rounded-md grayscale group-hover:grayscale-0 transition duration-200 w-full h-auto object-contain md:object-cover md:object-top"
               draggable={false}
               priority
             />
@@ -188,11 +188,10 @@ export const Card = ({
       style={{
         rotateX: rotate,
         translateY: translate,
-        // scale,
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-[46.72rem] md:h-[116.8rem] w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
+      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-auto md:h-[116.8rem] w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
     >
       <Beam showBeam className="-top-1 block" />
       <div className="absolute h-40 w-full bottom-0 md:-bottom-10 inset-x-0 scale-[1.2] z-20 pointer-events-none bg-charcoal [mask-image:linear-gradient(to_top,white_30%,transparent)]" />
