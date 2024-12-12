@@ -159,10 +159,11 @@ export const Hero = () => {
             <Image
               src={`/dashboard.png`}
               alt="hero"
-              height={720}
-              width={1400}
-              className="mx-auto rounded-md grayscale group-hover:grayscale-0 transition duration-200 object-cover object-left-top h-full  md:object-left-top"
+              height={1350}
+              width={1920}
+              className="mx-auto rounded-md grayscale group-hover:grayscale-0 transition duration-200 object-cover object-top h-full md:h-full"
               draggable={false}
+              priority
             />
           </Card>
         </div>
@@ -191,7 +192,7 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-[20rem] md:h-[50rem] w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
+      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-[46.72rem] md:h-[116.8rem] w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
     >
       <Beam showBeam className="-top-1 block" />
       <div className="absolute h-40 w-full bottom-0 md:-bottom-10 inset-x-0 scale-[1.2] z-20 pointer-events-none bg-charcoal [mask-image:linear-gradient(to_top,white_30%,transparent)]" />
