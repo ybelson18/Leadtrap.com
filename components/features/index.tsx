@@ -36,7 +36,7 @@ export const Features = () => {
               textWrap: 'balance'
             }}
           >
-            The ready-to-buy leads we send you from your website come with world-class data and insights that you need to close—and you don't have to click a thing.
+            The ready-to-buy leads we send you from your website come with world-class data and insights that you need to close—and you don&apos;t have to click a thing.
             <div className="mt-3 md:mt-6 flex justify-center">
               <button className="group hover:-translate-y-0.5 active:scale-[0.98] bg-secondary relative z-10 hover:bg-secondary/90 border border-secondary text-black text-sm md:text-sm transition font-medium duration-200 rounded-md px-4 py-2 justify-center shadow-[0px_-1px_0px_0px_#FFFFFF60_inset,_0px_1px_0px_0px_#FFFFFF60_inset] flex space-x-2 items-center group !text-lg">
                 <span>Get a demo</span>
