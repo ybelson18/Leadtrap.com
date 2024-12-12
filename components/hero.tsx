@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { Button } from "./button";
@@ -9,6 +9,7 @@ import { Container } from "./container";
 import { Heading } from "./heading";
 import { Subheading } from "./subheading";
 import Beam from "./beam";
+import { cn } from "@/lib/utils";
 
 export const Hero = () => {
   const router = useRouter();
@@ -49,26 +50,37 @@ export const Hero = () => {
   const { scrollYProgress } = useScroll({
     target: containerRef,
   });
-
   const [isMobile, setIsMobile] = React.useState(false);
+  const [hasScrolled, setHasScrolled] = React.useState(false);
 
   React.useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
+    const checkScroll = () => {
+      setHasScrolled(window.scrollY > 0);
+    };
     checkMobile();
+    checkScroll();
     window.addEventListener("resize", checkMobile);
+    window.addEventListener("scroll", checkScroll);
     return () => {
       window.removeEventListener("resize", checkMobile);
+      window.removeEventListener("scroll", checkScroll);
     };
   }, []);
 
-  const translate = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 0 : 100]);
+  const scaleDimensions = () => {
+    return isMobile ? [0.7, 0.9] : [1.05, 1.2];
+  };
+
+  const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   return (
     <div
       ref={containerRef}
-      className="flex flex-col min-h-[60rem] md:min-h-[100rem] pt-20 md:pt-40 relative overflow-hidden"
+      className="flex flex-col min-h-[70rem] md:min-h-[100rem] pt-20 md:pt-40 relative overflow-hidden"
     >
       <Container className="flex  flex-col items-center justify-center">
         <div className="flex justify-center items-center mb-1 text-[#00A0E9]">
@@ -148,18 +160,20 @@ export const Hero = () => {
         <div
           className="w-full relative overflow-x-hidden md:overflow-x-visible"
         >
-          <Card translate={translate}>
-            <div className="p-0">
-              <Image
-                src={`/dashboard.png`}
-                alt="hero"
-                height={1350}
-                width={1920}
-                className="mx-auto rounded-md transition duration-200 w-full h-auto object-contain object-top md:object-cover md:object-top"
-                draggable={false}
-                priority
-              />
-            </div>
+          <Card translate={translate} scale={scale}>
+            <Image
+              src={`/dashboard.png`}
+              alt="hero"
+              height={1350}
+              width={1920}
+              className={cn(
+                "mx-auto rounded-md transition-all duration-100",
+                hasScrolled ? "" : "grayscale",
+                "w-full h-auto object-contain md:object-cover md:object-top"
+              )}
+              draggable={false}
+              priority
+            />
           </Card>
         </div>
       </div>
@@ -168,9 +182,11 @@ export const Hero = () => {
 };
 
 export const Card = ({
+  scale,
   translate,
   children,
 }: {
+  scale: MotionValue<number>;
   translate: MotionValue<number>;
   children: React.ReactNode;
 }) => {
@@ -181,7 +197,7 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-auto md:h-[116.8rem] w-full border-4 border-neutral-900 p-0 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
+      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-auto md:h-[116.8rem] w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
     >
       <Beam showBeam className="-top-1 block" />
       <div className="absolute h-40 w-full bottom-0 md:-bottom-10 inset-x-0 scale-[1.2] z-20 pointer-events-none bg-charcoal [mask-image:linear-gradient(to_top,white_30%,transparent)]" />
