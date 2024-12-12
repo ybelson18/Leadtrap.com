@@ -157,13 +157,15 @@ export const Hero = () => {
         >
           <Card rotate={rotate} translate={translate} scale={scale}>
             <Image
-              src={`/dashboard.png`}
+              src={`/dashboard-optimized.png`}
               alt="hero"
-              height={1350}
+              height={1080}
               width={1920}
               className="mx-auto rounded-md grayscale group-hover:grayscale-0 transition duration-200 object-cover object-top h-full md:h-full"
               draggable={false}
               priority
+              blurDataURL="/dashboard.webp"
+              placeholder="blur"
             />
           </Card>
         </div>
