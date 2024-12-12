@@ -148,7 +148,7 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-      <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full mt-28 md:mt-20">
+      <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full mt-16 md:mt-20">
         <div
           className="w-full relative overflow-x-hidden md:overflow-x-visible"
         >
