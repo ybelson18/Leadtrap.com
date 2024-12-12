@@ -26,9 +26,9 @@ export const PricingGrid = () => {
     {
       title: "Pro",
       description: "100 leads MONTHLY",
-      monthlyPrice: 249,
-      yearlyPrice: 199,
-      yearlyTotal: 2388,
+      monthlyPrice: 299,
+      yearlyPrice: 249,
+      yearlyTotal: 2990,
       features: [
         "AI Lead Agent",
         "AI Research Agent",
@@ -47,9 +47,9 @@ export const PricingGrid = () => {
     {
       title: "Pro+",
       description: "300 leads MONTHLY",
-      monthlyPrice: 399,
-      yearlyPrice: 332,
-      yearlyTotal: 3990,
+      monthlyPrice: 499,
+      yearlyPrice: 415,
+      yearlyTotal: 4990,
       features: [
         "Everything in Pro, +",
         "Advanced lead scoring",
@@ -65,28 +65,6 @@ export const PricingGrid = () => {
       ctaText: "30 Days Free",
     },
     {
-      title: "Mega",
-      description: "600 leads MONTHLY",
-      monthlyPrice: 799,
-      yearlyPrice: 665,
-      yearlyTotal: 7990,
-      features: [
-        "Everything in Pro+, +",
-        "Custom enrichments",
-        "Advanced analytics dashboard",
-        "Custom integration options",
-        "Dedicated success manager",
-        "Early access to beta features",
-        "Custom reporting",
-        "30 Days Free",
-      ],
-      featured: true,
-      onClick: () => {
-        console.log("clicked");
-      },
-      ctaText: "30 Days Free",
-    },
-    {
       title: "Enterprise",
       description: "Unlimited leads MONTHLY",
       monthlyPrice: 0,
@@ -95,7 +73,9 @@ export const PricingGrid = () => {
       features: [
         "Everything in Mega, +",
         "Unlimited team members",
-        "Priority access to new features",
+        "Custom enrichments",
+        "Custom integrations",
+        "Dedicated success manager",
         "Custom AI training",
         "Dedicated account management",
         "Custom SLA & support",
