@@ -92,7 +92,7 @@ export const Tools = () => {
       icon: <IconSunglassesFilled className="h-8 w-8 text-secondary" />,
       title: "You Get to Watch",
       description:
-        "Watch your agent work its magic with your endless stream of premium, ready-to-close leads straight to your inbox, phone, or Slack. See exactly which prospects are worth pursuing and your expected payoff.",
+        "Watch your agent work its magic with your endless stream of fully-managed, premium leads straight to your inbox, phone, or Slack. See exactly which prospects are worth pursuing and your expected payoff. Zero clicks needed.",
       content: (
         <ImageContainer>
           <BlurImage
