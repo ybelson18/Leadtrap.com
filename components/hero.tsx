@@ -158,7 +158,7 @@ export const Hero = () => {
               alt="hero"
               height={1350}
               width={1920}
-              className="mx-auto rounded-md grayscale group-hover:grayscale-0 transition duration-200 w-full h-auto object-contain md:object-cover md:object-top"
+              className="mx-auto rounded-md transition duration-200 w-full h-auto object-contain md:object-cover md:object-top"
               draggable={false}
               priority
             />
