@@ -26,7 +26,7 @@ const questions = [
     id: 4,
     title: "How much does LeadTrap cost?",
     description:
-      "Our pricing is based on lead volume, starting at $349/month for up to 100 leads. We offer a free trial period to demonstrate LeadTrap's value before you commit. As your lead volume grows, you can scale up to plans that handle 300, 600, or more leads per month.",
+      "Our pricing is based on lead volume, with three flexible plans: Starter ($299/month for 100 leads), Pro+ ($499/month for 300 leads), and Enterprise (custom pricing for unlimited leads). All plans include a 30-day free trial to experience LeadTrap's value before you commit.",
   },
   {
     id: 5,

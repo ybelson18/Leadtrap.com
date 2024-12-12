@@ -24,7 +24,7 @@ interface PricingTier {
 export const PricingGrid = () => {
   const tiers: PricingTier[] = [
     {
-      title: "Pro",
+      title: "Starter",
       description: "100 leads MONTHLY",
       monthlyPrice: 299,
       yearlyPrice: 249,
@@ -42,7 +42,7 @@ export const PricingGrid = () => {
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "30 Day Free Trial",
+      ctaText: "Try 30 Days Free",
     },
     {
       title: "Pro+",
@@ -62,7 +62,7 @@ export const PricingGrid = () => {
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "30 Days Free",
+      ctaText: "Try 30 Days Free",
     },
     {
       title: "Enterprise",
@@ -83,7 +83,7 @@ export const PricingGrid = () => {
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "Get a demo",
+      ctaText: "Get a Demo",
     },
   ];
   const [checked, setChecked] = useState(false);
@@ -92,7 +92,7 @@ export const PricingGrid = () => {
       <div className="flex justify-center">
         <Switch checked={checked} setChecked={setChecked} />
       </div>
-      <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-4 py-20">
+      <Container className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-8 py-20 max-w-6xl mx-auto">
         {tiers.map((tier, index) => (
           <div
             key={tier.title + index}
