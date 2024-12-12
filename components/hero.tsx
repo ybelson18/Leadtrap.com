@@ -156,27 +156,32 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-      <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full mt-8 md:mt-20">
-        <div
-          className="w-full relative overflow-x-hidden md:overflow-x-visible"
-        >
-          <Card translate={translate} scale={scale}>
-            <Image
-              src={`/dashboard.png`}
-              alt="hero"
-              height={1350}
-              width={1920}
-              className={cn(
-                "mx-auto rounded-md transition-all duration-100",
-                hasScrolled ? "" : "grayscale",
-                "w-full h-auto object-contain md:object-cover md:object-top"
-              )}
-              draggable={false}
-              priority
-            />
-          </Card>
+
+      <Container>
+        <div className="mt-64 md:mt-20">
+          <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full">
+            <div
+              className="w-full relative overflow-x-hidden md:overflow-x-visible"
+            >
+              <Card translate={translate} scale={scale}>
+                <Image
+                  src={`/dashboard.png`}
+                  alt="hero"
+                  height={1350}
+                  width={1920}
+                  className={cn(
+                    "mx-auto rounded-md transition-all duration-100",
+                    hasScrolled ? "" : "grayscale",
+                    "w-full h-auto object-contain md:object-cover md:object-top"
+                  )}
+                  draggable={false}
+                  priority
+                />
+              </Card>
+            </div>
+          </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
