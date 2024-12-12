@@ -38,7 +38,7 @@ const questions = [
     id: 6,
     title: "What kind of businesses is LeadTrap best suited for?",
     description:
-      "LeadTrap is specifically designed for service businesses that want to scale their sales with or without hiring a full sales team. It's perfect for businesses that rely on lead generation and value personalized customer interactions, such as real estate, consulting, professional services, and more.",
+      "LeadTrap is perfect for both B2B and B2C businesses that need high-quality leads. Our AI agent adapts its research approach based on whether a lead is B2B or B2C, delivering world-class information that helps close deals in both contexts. For B2B, we provide deep company insights and decision-maker details, while for B2C, we focus on individual preferences and buying signals. This versatility makes LeadTrap ideal for any business looking to convert website visitors into qualified leads.",
   },
   {
     id: 7,
