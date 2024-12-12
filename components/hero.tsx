@@ -130,7 +130,7 @@ export const Hero = () => {
             data-br=":R4l7puja:"
             data-brr="1"
           >
-            Use AI to push an endless stream of premium, ready-to-close leads from your website straight to your inbox, phone, or Slack.
+            Use AI to push an endless stream of premium, ready-to-close leads straight from your website to your inbox, phone, or Slack.
           </span>
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
