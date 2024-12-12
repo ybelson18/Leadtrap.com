@@ -12,10 +12,11 @@ import React, { CSSProperties, useRef, useState } from "react";
 export const GradientContainer = ({
   children,
   className,
+  ...props
 }: {
   children: React.ReactNode;
   className?: string;
-}) => {
+} & React.HTMLAttributes<HTMLDivElement>) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress, scrollY } = useScroll({
     target: ref,
@@ -53,6 +54,7 @@ export const GradientContainer = ({
     <div
       ref={ref}
       className={cn("relative z-20", className)}
+      {...props}
     >
       <motion.div
         className={`w-full h-[var(--conic-size)] mb-[calc(-1*var(--conic-size))] 
