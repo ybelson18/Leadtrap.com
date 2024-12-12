@@ -106,27 +106,7 @@ export const Hero = () => {
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 max-w-3xl mx-auto relative z-10">
           <span
-            style={{
-              WebkitTextSizeAdjust: '100%',
-              tabSize: 4,
-              fontFeatureSettings: 'normal',
-              fontVariationSettings: 'normal',
-              WebkitTapHighlightColor: 'transparent',
-              fontFamily: '__Inter_f50a95,__Inter_Fallback_f50a95',
-              fontStyle: 'normal',
-              WebkitFontSmoothing: 'antialiased',
-              textAlign: 'center',
-              fontWeight: 400,
-              color: 'var(--neutral-200)',
-              fontSize: '1.5rem',
-              lineHeight: '2rem',
-              boxSizing: 'border-box',
-              border: '0 solid #e5e7eb',
-              display: 'inline-block',
-              verticalAlign: 'top',
-              textDecoration: 'inherit',
-              textWrap: 'balance'
-            }}
+            className="text-muted-foreground block max-w-[750px] mx-auto text-center text-[1.125rem] md:text-[1.5rem] leading-8"
             data-br=":R4l7puja:"
             data-brr="1"
           >
