@@ -122,7 +122,7 @@ export const Hero = () => {
             data-br=":R4l7puja:"
             data-brr="1"
           >
-            Use AI to push an endless stream of premium, ready-to-close leads straight to your inbox, phone, or Slack.
+            Use AI to push an endless stream of premium, ready-to-close leads from your website straight to your inbox, phone, or Slack.
           </span>
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
@@ -148,7 +148,7 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-      <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full mt-40 md:mt-20">
+      <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full mt-28 md:mt-20">
         <div
           className="w-full relative overflow-x-hidden md:overflow-x-visible"
         >
