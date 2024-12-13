@@ -80,7 +80,7 @@ export const Hero = () => {
   return (
     <div
       ref={containerRef}
-      className="flex flex-col min-h-[70rem] md:min-h-[100rem] pt-20 md:pt-40 relative overflow-hidden"
+      className="flex flex-col min-h-[70rem] md:min-h-[100rem] pt-20 md:pt-40 relative"
     >
       <Container className="flex  flex-col items-center justify-center">
         <div className="flex justify-center items-center mb-1 text-[#00A0E9]">
