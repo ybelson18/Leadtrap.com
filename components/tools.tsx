@@ -56,7 +56,7 @@ export const Tools = () => {
     },
     {
       icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
-      title: "Auto-Scores and Routes",
+      title: "Scores and Sends Your Leads",
       description:
         "Your agent is scoring and routing leads instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
       content: (
@@ -90,7 +90,7 @@ export const Tools = () => {
     },
     {
       icon: <IconSunglassesFilled className="h-8 w-8 text-secondary" />,
-      title: "You Get to Watch",
+      title: "You Just Watch",
       description:
         "Watch your agent work its magic with your endless stream of fully-managed, premium leads straight to your inbox, phone, or Slack. See exactly which prospects are worth pursuing and your expected payoff. Zero clicks needed.",
       content: (
