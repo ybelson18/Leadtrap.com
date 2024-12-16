@@ -33,7 +33,7 @@ export const MobileNavbar = ({ navItems }: any) => {
       )}
     >
       <NavBarItem href="/">
-        <Logo />
+        <Logo noLink />
       </NavBarItem>
       <IoIosMenu
         className="text-white h-6 w-6"
@@ -43,7 +43,7 @@ export const MobileNavbar = ({ navItems }: any) => {
         <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start space-y-10 pt-5 text-xl text-zinc-600 transition duration-200 hover:text-zinc-800">
           <div className="flex items-center justify-between w-full px-2.5 py-1.5">
             <NavBarItem href="/">
-              <Logo />
+              <Logo noLink />
             </NavBarItem>
             <div className="flex items-center space-x-2">
               <IoIosClose

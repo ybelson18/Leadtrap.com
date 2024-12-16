@@ -9,6 +9,7 @@ import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { LeadBot } from "@/components/lead-bot";
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: "LeadTrap - AI That Sends You Premium Leads",
@@ -58,7 +59,15 @@ export default function RootLayout({
 }>) {
   return (
     <ViewTransitions>
-      <html lang="en" className={`${inter.className} ${kalam.variable}`}>
+      <html
+        lang="en"
+        className={cn(
+          inter.variable,
+          kalam.variable,
+          "scroll-smooth",
+          "bg-black"
+        )}
+      >
         <head>
           <script dangerouslySetInnerHTML={{
             __html: `
@@ -84,20 +93,21 @@ export default function RootLayout({
         </head>
         <body
           className={cn(
-            inter.className,
-            "bg-charcoal antialiased h-full w-full"
+            "min-h-screen bg-black antialiased",
+            "relative flex flex-col"
           )}
         >
+          <NavBar />
+          {children}
+          <Footer />
+          <LeadBot />
           <Script 
             src="https://app.leadtrap.ai/platform/script?partner_id=dfaacbca-1c96-4399-9b36-7c63c2707f16"
             strategy="afterInteractive"
             type="text/javascript"
             async
           />
-          <NavBar />
-          {children}
-          <Footer />
-          <LeadBot />
+          <Analytics />
         </body>
       </html>
     </ViewTransitions>

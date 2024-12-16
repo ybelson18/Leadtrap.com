@@ -60,7 +60,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
       </AnimatePresence>
       <div className="flex flex-row gap-8">
         <NavBarItem href="/">
-          <Logo />
+          <Logo noLink />
         </NavBarItem>
         <div className="flex items-center gap-2">
           <NavBarItem href="/">Home</NavBarItem>
