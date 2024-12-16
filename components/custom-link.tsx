@@ -1,14 +1,17 @@
 import Link, { LinkProps } from "next/link";
+import { HTMLAttributeAnchorTarget } from "react";
 
-interface CustomLinkProps {
+interface CustomLinkProps extends Omit<LinkProps, "href"> {
   href: string;
-  children?: React.ReactNode; // Ensure children is part of the props
+  children?: React.ReactNode;
+  className?: string;
+  target?: HTMLAttributeAnchorTarget;
 }
 
-export const CustomLink = (props: CustomLinkProps) => {
+export const CustomLink = ({ className, ...props }: CustomLinkProps) => {
   return (
     <Link
-      className="text-neutral-400 hover:text-white border-b-[1px] border-neutral-400 pb-0.5 hover:border-white  transition duration-200"
+      className={className || "text-neutral-400 hover:text-white border-b-[1px] border-neutral-400 pb-0.5 hover:border-white transition duration-200"}
       {...props}
     >
       {props.children}
