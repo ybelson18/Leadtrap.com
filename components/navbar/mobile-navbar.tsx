@@ -48,6 +48,13 @@ export const MobileNavbar = ({ navItems }: any) => {
             </div>
           </div>
           <div className="flex flex-col items-start justify-start gap-[14px] px-8">
+            <Link
+              href="/"
+              className="text-white hover:text-neutral-300 transition"
+              onClick={() => setOpen(false)}
+            >
+              Home
+            </Link>
             {navItems.map((navItem: any, idx: number) => (
               <>
                 {navItem.children && navItem.children.length > 0 ? (
