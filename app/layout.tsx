@@ -14,13 +14,12 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
-  variable: '--font-inter'
 });
 
 const kalam = Kalam({
   weight: '400',
   subsets: ["latin"],
-  variable: '--font-kalam'
+  variable: '--font-kalam',
 });
 
 export const metadata: Metadata = {
@@ -57,15 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <ViewTransitions>
-      <html
-        lang="en"
-        className={cn(
-          inter.className,
-          kalam.className,
-          "scroll-smooth",
-          "bg-black"
-        )}
-      >
+      <html lang="en" className={`${kalam.variable}`}>
         <head>
           <script
             dangerouslySetInnerHTML={{
@@ -93,6 +84,7 @@ export default function RootLayout({
         </head>
         <body
           className={cn(
+            inter.className,
             "min-h-screen bg-black antialiased",
             "relative flex flex-col"
           )}
