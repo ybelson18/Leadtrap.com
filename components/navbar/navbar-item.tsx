@@ -11,6 +11,7 @@ type Props = {
   active?: boolean;
   className?: string;
   target?: "_blank";
+  onClick?: () => void;
 };
 
 export function NavBarItem({
@@ -19,6 +20,7 @@ export function NavBarItem({
   active,
   target,
   className,
+  onClick,
 }: Props) {
   const pathname = usePathname();
 
@@ -31,6 +33,7 @@ export function NavBarItem({
         className
       )}
       target={target}
+      onClick={onClick}
     >
       {children}
     </Link>

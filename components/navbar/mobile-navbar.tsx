@@ -42,7 +42,9 @@ export const MobileNavbar = ({ navItems }: any) => {
       {open && (
         <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start space-y-10 pt-5 text-xl text-zinc-600 transition duration-200 hover:text-zinc-800">
           <div className="flex items-center justify-between w-full px-2.5 py-1.5">
-            <Logo />
+            <NavBarItem href="/">
+              <Logo />
+            </NavBarItem>
             <div className="flex items-center space-x-2">
               <IoIosClose
                 className="h-8 w-8 text-white"
@@ -51,41 +53,32 @@ export const MobileNavbar = ({ navItems }: any) => {
             </div>
           </div>
           <div className="flex flex-col items-start justify-start gap-[14px] px-8">
-            <Link
-              href="/"
-              className="text-white hover:bg-neutral-800 hover:text-white/80 text-sm leading-[110%] px-4 py-2 rounded-md transition duration-200"
-              onClick={() => setOpen(false)}
-            >
+            <NavBarItem href="/" onClick={() => setOpen(false)}>
               Home
-            </Link>
+            </NavBarItem>
             {navItems.map((navItem: any, idx: number) => (
               <>
                 {navItem.children && navItem.children.length > 0 ? (
                   <>
                     {navItem.children.map((childNavItem: any, childIdx: number) => (
-                      <Link
+                      <NavBarItem
                         key={`link-${idx}-${childIdx}`}
                         href={childNavItem.link}
                         onClick={() => setOpen(false)}
-                        className="relative max-w-[15rem] text-left text-2xl"
                       >
-                        <span className="block text-white">
-                          {childNavItem.title}
-                        </span>
-                      </Link>
+                        {childNavItem.title}
+                      </NavBarItem>
                     ))}
                   </>
                 ) : (
-                  <Link
+                  <NavBarItem
                     key={`link-${idx}`}
                     href={navItem.link}
                     onClick={() => setOpen(false)}
-                    className="relative"
+                    target={navItem.target}
                   >
-                    <span className="block text-[26px] text-white">
-                      {navItem.title}
-                    </span>
-                  </Link>
+                    {navItem.title}
+                  </NavBarItem>
                 )}
               </>
             ))}
