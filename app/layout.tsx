@@ -14,12 +14,13 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
+  variable: '--font-inter'
 });
 
 const kalam = Kalam({
   weight: '400',
   subsets: ["latin"],
-  variable: '--font-kalam',
+  variable: '--font-kalam'
 });
 
 export const metadata: Metadata = {
@@ -28,7 +29,8 @@ export const metadata: Metadata = {
     "LeadTrap is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
   openGraph: {
     title: "LeadTrap - AI That Sends You Premium Leads",
-    description: "LeadTrap is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
+    description:
+      "LeadTrap is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
     url: "https://leadtrap.ai",
     siteName: "LeadTrap",
     images: [
@@ -36,8 +38,8 @@ export const metadata: Metadata = {
         url: "/banner.png",
         width: 1200,
         height: 630,
-        alt: "LeadTrap - AI Lead Generation Platform"
-      }
+        alt: "LeadTrap - AI Lead Generation Platform",
+      },
     ],
     locale: "en_US",
     type: "website",
@@ -45,31 +47,29 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#06b6d4" },
-    { media: "(prefers-color-scheme: dark)", color: "#06b6d4" },
-  ],
+  themeColor: "black",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <ViewTransitions>
       <html
         lang="en"
         className={cn(
-          inter.variable,
-          kalam.variable,
+          inter.className,
+          kalam.className,
           "scroll-smooth",
           "bg-black"
         )}
       >
         <head>
-          <script dangerouslySetInnerHTML={{
-            __html: `
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
               self.__wrap_n=self.__wrap_n||(self.CSS&&CSS.supports("text-wrap","balance")?1:2);
               self.__wrap_b=(e,l,t)=>{
                 let a=null==(t=t||document.querySelector(\`[data-br="\${e}"]\`))?void 0:t.parentElement;
@@ -88,7 +88,8 @@ export default function RootLayout({
               };
               self.__wrap_n!=1&&self.__wrap_b(":R577puja:",1);
             `
-          }} />
+            }}
+          />
         </head>
         <body
           className={cn(
@@ -100,13 +101,13 @@ export default function RootLayout({
           {children}
           <Footer />
           <LeadBot />
-          <Script 
+          <Script
             src="https://app.leadtrap.ai/platform/script?partner_id=dfaacbca-1c96-4399-9b36-7c63c2707f16"
             strategy="afterInteractive"
             type="text/javascript"
             async
           />
-          <Script 
+          <Script
             src="https://va.vercel-scripts.com/v1/script.js"
             strategy="afterInteractive"
             data-mode="production"
