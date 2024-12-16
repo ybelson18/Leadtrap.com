@@ -9,7 +9,7 @@ import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { LeadBot } from "@/components/lead-bot";
 import Script from "next/script";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   subsets: ["latin"],
