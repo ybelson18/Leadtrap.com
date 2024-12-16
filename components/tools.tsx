@@ -56,7 +56,7 @@ export const Tools = () => {
     },
     {
       icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
-      title: "Scores and Sends Your Leads",
+      title: "Scores and Delivers Your Leads",
       description:
         "Your agent is scoring and routing leads instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
       content: (
