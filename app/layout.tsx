@@ -9,7 +9,6 @@ import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { LeadBot } from "@/components/lead-bot";
 import Script from "next/script";
-import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -107,7 +106,11 @@ export default function RootLayout({
             type="text/javascript"
             async
           />
-          <Analytics mode="production" debug={false} />
+          <Script 
+            src="https://va.vercel-scripts.com/v1/script.js"
+            strategy="afterInteractive"
+            data-mode="production"
+          />
         </body>
       </html>
     </ViewTransitions>
