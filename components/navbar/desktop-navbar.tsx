@@ -63,9 +63,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
           <Logo />
         </Link>
         <div className="flex items-center gap-2">
-          <Link href="/" className="text-white hover:text-neutral-300 transition">
-            Home
-          </Link>
+          <NavBarItem href="/">Home</NavBarItem>
           {navItems.map((item) => (
             <NavBarItem href={item.link} key={item.title} target={item.target}>
               {item.title}

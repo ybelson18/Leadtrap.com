@@ -50,7 +50,7 @@ export const MobileNavbar = ({ navItems }: any) => {
           <div className="flex flex-col items-start justify-start gap-[14px] px-8">
             <Link
               href="/"
-              className="text-white hover:text-neutral-300 transition"
+              className="text-white hover:bg-neutral-800 hover:text-white/80 text-sm leading-[110%] px-4 py-2 rounded-md transition duration-200"
               onClick={() => setOpen(false)}
             >
               Home
