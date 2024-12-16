@@ -8,6 +8,7 @@ import { Button } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { NavBarItem } from "@/components/navbar/navbar-item";
+import { CustomLink } from "@/components/custom-link";
 
 export const MobileNavbar = ({ navItems }: any) => {
   const [open, setOpen] = useState(false);
@@ -84,7 +85,9 @@ export const MobileNavbar = ({ navItems }: any) => {
             ))}
           </div>
           <div className="flex flex-row w-full items-start gap-2.5 px-8 py-4">
-            <Button>Get a demo</Button>
+            <CustomLink href="https://calendly.com/ybelsonapple/30min">
+              <Button>Get a demo</Button>
+            </CustomLink>
             <Button
               variant="simple"
               as={Link}

@@ -18,6 +18,7 @@ interface PricingTier {
   features: string[];
   onClick: () => void;
   ctaText: string;
+  ctaHref?: string;
   featured?: boolean;
 }
 
@@ -84,6 +85,7 @@ export const PricingGrid = () => {
         console.log("clicked");
       },
       ctaText: "Get a Demo",
+      ctaHref: "https://calendly.com/ybelsonapple/30min",
     },
   ];
   const [checked, setChecked] = useState(false);
@@ -139,6 +141,14 @@ export const PricingGrid = () => {
             >
               {tier.ctaText}
             </Button>
+            {tier.ctaHref && (
+              <CustomLink
+                href={tier.ctaHref}
+                className="text-sm text-neutral-400 mt-2"
+              >
+                {tier.ctaText}
+              </CustomLink>
+            )}
           </div>
         ))}
       </Container>

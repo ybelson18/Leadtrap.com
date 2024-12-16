@@ -2,6 +2,7 @@
 import { Logo } from "@/components/logo";
 import { Button } from "../button";
 import { NavBarItem } from "./navbar-item";
+import { CustomLink } from '../custom-link';
 import {
   useMotionValueEvent,
   useScroll,
@@ -75,7 +76,9 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         <Button variant="simple" as={Link} href="/login">
           Login
         </Button>
-        <Button>Get a demo</Button>
+        <CustomLink href="https://calendly.com/ybelsonapple/30min">
+          <Button>Get a demo</Button>
+        </CustomLink>
       </div>
     </motion.div>
   );
