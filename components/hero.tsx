@@ -10,6 +10,7 @@ import { Heading } from "./heading";
 import { Subheading } from "./subheading";
 import Beam from "./beam";
 import { cn } from "@/lib/utils";
+import { CustomLink } from "./custom-link";
 
 export const Hero = () => {
   const router = useRouter();
@@ -115,10 +116,16 @@ export const Hero = () => {
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
           <div className="relative inline-flex items-center">
-            <Button className="flex space-x-2 items-center group !text-lg relative z-20">
-              <span>Get a demo</span>{" "}
-              <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
-            </Button>
+            <CustomLink 
+              href="https://calendly.com/ybelsonapple/30min" 
+              target="_blank"
+              className="no-underline"
+            >
+              <Button className="flex space-x-2 items-center group !text-lg relative z-20">
+                <span>Get a demo</span>{" "}
+                <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
+              </Button>
+            </CustomLink>
             <div 
               className="w-32 h-24 bg-[#fff740] -rotate-3 p-3 shadow-lg text-xl leading-tight flex items-center justify-center transform hover:rotate-2 transition-transform duration-200 absolute -right-[112px]"
               style={{ 

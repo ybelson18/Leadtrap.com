@@ -21,7 +21,11 @@ export const CTA = () => {
           <p className="max-w-md mt-8 mb-8 md:mb-0 text-center md:text-left text-sm md:text-base mx-auto md:mx-0 text-neutral-400">
           Start using AI to push an endless stream of premium, ready-to-close leads directly to your email, CRM, and calendar.</p>
         </div>
-        <CustomLink href="https://calendly.com/ybelsonapple/30min">
+        <CustomLink 
+          href="https://calendly.com/ybelsonapple/30min"
+          target="_blank"
+          className="no-underline"
+        >
           <Button className="flex space-x-2 items-center group !text-lg">
             <span>Get a demo</span>
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
