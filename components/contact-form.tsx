@@ -24,7 +24,7 @@ export const ContactForm = () => {
 
         <div className="text-sm mt-10">
           <p className="text-sm text-neutral-200">Email</p>
-          <p className="text-sm text-neutral-400">contact@leadtrap.ai</p>
+          <p className="text-sm text-neutral-400">contact@leadtrap.com</p>
         </div>
         {/* Removed Phone and Support sections */}
       </div>
