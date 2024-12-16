@@ -58,7 +58,7 @@ export const Tools = () => {
       icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
       title: "Scores and Delivers Your Leads",
       description:
-        "Your agent is scoring and routing leads instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
+        "Your agent is scoring and routing leads instantly. High-value prospects hit your inbox, SMS and Calendar. No leads wasted, everything tracked.",
       content: (
         <ImageContainer>
           <BlurImage

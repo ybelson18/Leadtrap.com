@@ -14,7 +14,7 @@ const questions = [
     id: 2,
     title: "How does LeadTrap work?",
     description:
-    " LeadTrap integrates with your website to engage visitors in real-time conversations, capture their information, and enrich it with valuable insights. It then follows up across multiple channels (email, SMS, social media) to nurture leads until they're ready to convert. The system automatically routes high-value prospects to your inbox, SMS, or Slack.",
+    " LeadTrap integrates with your website to engage visitors in real-time conversations, capture their information, and enrich it with valuable insights. It then follows up across multiple channels (email, SMS, social media) to nurture leads until they're ready to convert. The system automatically routes high-value prospects to your inbox, SMS, and calendar.",
   },
   {
     id: 3,

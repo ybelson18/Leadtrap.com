@@ -18,7 +18,7 @@ export const CTA = () => {
           Turn your website into money with 30 days free
           </motion.h2>
           <p className="max-w-md mt-8 mb-8 md:mb-0 text-center md:text-left text-sm md:text-base mx-auto md:mx-0 text-neutral-400">
-          Start using AI to push an endless stream of premium, ready-to-close leads directly to your email, CRM, or Slack.</p>
+          Start using AI to push an endless stream of premium, ready-to-close leads directly to your email, CRM, and calendar.</p>
         </div>
         <Button className="flex space-x-2 items-center group !text-lg">
           <span>Get a demo</span>
