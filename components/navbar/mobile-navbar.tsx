@@ -7,6 +7,7 @@ import { IoIosClose } from "react-icons/io";
 import { Button } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { useMotionValueEvent, useScroll } from "framer-motion";
+import { NavBarItem } from "@/components/navbar/navbar-item";
 
 export const MobileNavbar = ({ navItems }: any) => {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,9 @@ export const MobileNavbar = ({ navItems }: any) => {
           " bg-neutral-900  shadow-[0px_-2px_0px_0px_var(--neutral-800),0px_2px_0px_0px_var(--neutral-800)]"
       )}
     >
-      <Logo />
+      <NavBarItem href="/">
+        <Logo />
+      </NavBarItem>
       <IoIosMenu
         className="text-white h-6 w-6"
         onClick={() => setOpen(!open)}
