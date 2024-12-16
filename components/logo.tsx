@@ -25,7 +25,7 @@ export const Logo = ({ noLink }: LogoProps) => {
   }
 
   return (
-    <Link href="/" className="block">
+    <Link href="/" className="block hover:opacity-80 transition-opacity duration-200">
       {content}
     </Link>
   );

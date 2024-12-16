@@ -36,7 +36,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
   return (
     <motion.div
       className={cn(
-        "w-full flex relative justify-between px-4 py-3 rounded-md  transition duration-200 bg-transparent mx-auto"
+        "w-full flex relative justify-between px-4 py-3 rounded-md transition duration-200 bg-transparent mx-auto"
       )}
       animate={{
         width: showBackground ? "80%" : "100%",
@@ -60,9 +60,11 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         )}
       </AnimatePresence>
       <div className="flex flex-row gap-8">
-        <NavBarItem href="/">
-          <Logo noLink />
-        </NavBarItem>
+        <div className="relative z-50">
+          <NavBarItem href="/">
+            <Logo noLink />
+          </NavBarItem>
+        </div>
         <div className="flex items-center gap-2">
           <NavBarItem href="/">Home</NavBarItem>
           {navItems.map((item) => (

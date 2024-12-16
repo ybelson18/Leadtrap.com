@@ -33,19 +33,27 @@ export const MobileNavbar = ({ navItems }: any) => {
           " bg-neutral-900  shadow-[0px_-2px_0px_0px_var(--neutral-800),0px_2px_0px_0px_var(--neutral-800)]"
       )}
     >
-      <NavBarItem href="/">
-        <Logo noLink />
-      </NavBarItem>
-      <IoIosMenu
-        className="text-white h-6 w-6"
-        onClick={() => setOpen(!open)}
-      />
+      <div className="flex flex-row justify-between px-4 py-3">
+        <div className="relative z-50">
+          <NavBarItem href="/">
+            <Logo noLink />
+          </NavBarItem>
+        </div>
+        <IoIosMenu
+          className="text-white h-6 w-6"
+          onClick={() => setOpen(!open)}
+        />
+      </div>
       {open && (
         <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start space-y-10 pt-5 text-xl text-zinc-600 transition duration-200 hover:text-zinc-800">
           <div className="flex items-center justify-between w-full px-2.5 py-1.5">
-            <NavBarItem href="/">
-              <Logo noLink />
-            </NavBarItem>
+            <div className="flex flex-row justify-between px-4 py-3">
+              <div className="relative z-50">
+                <NavBarItem href="/">
+                  <Logo noLink />
+                </NavBarItem>
+              </div>
+            </div>
             <div className="flex items-center space-x-2">
               <IoIosClose
                 className="h-8 w-8 text-white"
