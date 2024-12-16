@@ -11,6 +11,18 @@ import { LeadBot } from "@/components/lead-bot";
 import Script from "next/script";
 import { Analytics } from '@vercel/analytics/next';
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const kalam = Kalam({
+  weight: '400',
+  subsets: ["latin"],
+  variable: '--font-kalam',
+});
+
 export const metadata: Metadata = {
   title: "LeadTrap - AI That Sends You Premium Leads",
   description:
@@ -39,18 +51,6 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: dark)", color: "#06b6d4" },
   ],
 };
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
-
-const kalam = Kalam({
-  weight: '400',
-  subsets: ["latin"],
-  variable: '--font-kalam',
-});
 
 export default function RootLayout({
   children,
@@ -107,7 +107,7 @@ export default function RootLayout({
             type="text/javascript"
             async
           />
-          <Analytics />
+          <Analytics mode="production" debug={false} />
         </body>
       </html>
     </ViewTransitions>
