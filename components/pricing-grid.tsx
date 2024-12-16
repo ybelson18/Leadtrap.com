@@ -44,6 +44,7 @@ export const PricingGrid = () => {
         console.log("clicked");
       },
       ctaText: "Try 30 Days Free",
+      ctaHref: "https://calendly.com/ybelsonapple/30min",
     },
     {
       title: "Pro+",
@@ -64,6 +65,7 @@ export const PricingGrid = () => {
         console.log("clicked");
       },
       ctaText: "Try 30 Days Free",
+      ctaHref: "https://calendly.com/ybelsonapple/30min",
     },
     {
       title: "Enterprise",
@@ -134,20 +136,34 @@ export const PricingGrid = () => {
                 ))}
               </div>
             </div>
-            <Button
-              variant={tier.featured ? "primary" : "muted"}
-              onClick={tier.onClick}
-              className="mt-4"
-            >
-              {tier.ctaText}
-            </Button>
-            {tier.ctaHref && (
+            {tier.ctaHref ? (
               <CustomLink
                 href={tier.ctaHref}
-                className="text-sm text-neutral-400 mt-2"
+                target="_blank"
+                className="no-underline w-full"
+              >
+                <Button
+                  onClick={tier.onClick}
+                  className={cn(
+                    "w-full",
+                    tier.featured &&
+                      "bg-gradient-to-r from-[#FF3358] to-[#FF4FD8] hover:from-[#FF4FD8] hover:to-[#FF3358]"
+                  )}
+                >
+                  {tier.ctaText}
+                </Button>
+              </CustomLink>
+            ) : (
+              <Button
+                onClick={tier.onClick}
+                className={cn(
+                  "w-full",
+                  tier.featured &&
+                    "bg-gradient-to-r from-[#FF3358] to-[#FF4FD8] hover:from-[#FF4FD8] hover:to-[#FF3358]"
+                )}
               >
                 {tier.ctaText}
-              </CustomLink>
+              </Button>
             )}
           </div>
         ))}
