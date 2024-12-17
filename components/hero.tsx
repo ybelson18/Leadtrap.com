@@ -93,7 +93,7 @@ export const Hero = () => {
           className="text-5xl md:text-6xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10 leading-tight lg:leading-[1.2]"
         >
           <span
-            className="bg-gradient-to-r from-[#39c3ef] to-[#2198c0] bg-clip-text text-transparent"
+            className="bg-gradient-to-b from-[#063447] to-[#5dd8ff] bg-clip-text text-transparent"
             style={{
               display: 'inline-block',
               verticalAlign: 'top',
