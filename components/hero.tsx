@@ -93,16 +93,19 @@ export const Hero = () => {
           className="text-5xl md:text-6xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10 leading-tight lg:leading-[1.2]"
         >
           <span
+            className="bg-gradient-to-r from-[#39c3ef] to-[#2198c0] bg-clip-text text-transparent"
             style={{
               display: 'inline-block',
               verticalAlign: 'top',
-              textDecoration: 'inherit',
               textWrap: 'balance'
             }}
             data-br=":R2l7puja:"
             data-brr="1"
           >
-            Stop Chasing Leads.
+            Turn Your Website{' '}
+            <span style={{ fontSize: '1.1em' }}>
+              into Premium Leads.
+            </span>
           </span>
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 max-w-3xl mx-auto relative z-10">
@@ -111,7 +114,7 @@ export const Hero = () => {
             data-br=":R4l7puja:"
             data-brr="1"
           >
-            Use AI to push an endless stream of premium, ready-to-close leads straight from your website to your inbox, phone, and calendar.
+            Use AI to turn your website visitors into a stream of highly researched, ready-to-close leads in your inbox, phone, and calendar.
           </span>
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
