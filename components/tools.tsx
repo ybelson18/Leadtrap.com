@@ -73,7 +73,7 @@ export const Tools = () => {
     },
     {
       icon: <IconMail className="h-8 w-8 text-secondary" />,
-      title: "Manages Your Leads Automatically",
+      title: "Automates Lead Follow-Ups",
       description:
         "While your competition is sleeping, your agent is sending personalized follow-ups that are closing. Email and SMS that hit hard and fast.",
       content: (
@@ -92,7 +92,7 @@ export const Tools = () => {
       icon: <IconSunglassesFilled className="h-8 w-8 text-secondary" />,
       title: "You Just Watch",
       description:
-        "Watch your agent work its magic with your endless stream of fully-managed, premium leads straight to your inbox, phone, or Slack. See exactly which prospects are worth pursuing and your expected payoff. Zero clicks needed.",
+        "Watch your agent work its magic with your endless stream of fully-managed, premium leads straight to your inbox, phone, and calendar. See exactly which prospects are worth pursuing and your expected payoff. Zero clicks needed.",
       content: (
         <ImageContainer>
           <BlurImage

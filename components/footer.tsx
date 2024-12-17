@@ -33,16 +33,8 @@ export const Footer = () => {
   ];
   const socials = [
     {
-      name: "Twitter",
-      href: "https://twitter.com/mannupaaji",
-    },
-    {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/manuarora28",
-    },
-    {
-      name: "GitHub",
-      href: "https://github.com/manuarora700",
+      href: "https://www.linkedin.com/company/leadtrap",
     },
   ];
   return (
