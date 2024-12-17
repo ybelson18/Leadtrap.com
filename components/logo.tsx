@@ -8,15 +8,15 @@ type LogoProps = {
 
 export const Logo = ({ noLink }: LogoProps) => {
   const content = (
-    <div className="font-normal flex items-center space-x-3 text-sm relative z-20">
+    <div className="font-normal flex items-center space-x-2 text-sm relative z-20">
       <Image 
         src="/logos/leadtrap.png"
         alt="LeadTrap Logo"
         width={256}
         height={256}
-        className="h-12 w-12"
+        className="h-10 w-10 md:h-12 md:w-12"
       />
-      <span className="text-white font-bold text-xl">LeadTrap</span>
+      <span className="text-white font-bold text-lg md:text-xl">LeadTrap</span>
     </div>
   );
 

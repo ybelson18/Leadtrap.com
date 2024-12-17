@@ -28,85 +28,54 @@ export const MobileNavbar = ({ navItems }: any) => {
   return (
     <div
       className={cn(
-        "flex justify-between bg-transparent items-center w-full rounded-md px-2.5 py-1.5 transition duration-200",
+        "flex items-center justify-between w-full bg-transparent px-4 py-3 transition duration-200",
         showBackground &&
-          " bg-neutral-900  shadow-[0px_-2px_0px_0px_var(--neutral-800),0px_2px_0px_0px_var(--neutral-800)]"
+          "bg-neutral-900 shadow-[0px_-2px_0px_0px_var(--neutral-800),0px_2px_0px_0px_var(--neutral-800)]"
       )}
     >
-      <div className="flex flex-row justify-between px-4 py-3">
-        <div className="relative z-50">
-          <NavBarItem href="/">
-            <Logo noLink />
-          </NavBarItem>
-        </div>
-        <IoIosMenu
-          className="text-white h-6 w-6"
-          onClick={() => setOpen(!open)}
-        />
+      <div className="relative z-50">
+        <NavBarItem href="/">
+          <Logo noLink />
+        </NavBarItem>
       </div>
+      <IoIosMenu
+        className="text-white h-6 w-6 cursor-pointer"
+        onClick={() => setOpen(!open)}
+      />
       {open && (
-        <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start space-y-10 pt-5 text-xl text-zinc-600 transition duration-200 hover:text-zinc-800">
-          <div className="flex items-center justify-between w-full px-2.5 py-1.5">
-            <div className="flex flex-row justify-between px-4 py-3">
-              <div className="relative z-50">
-                <NavBarItem href="/">
-                  <Logo noLink />
-                </NavBarItem>
-              </div>
+        <div className="fixed inset-0 bg-black z-50 flex flex-col items-start justify-start pt-5">
+          <div className="flex items-center justify-between w-full px-4 py-3">
+            <div className="relative z-50">
+              <NavBarItem href="/">
+                <Logo noLink />
+              </NavBarItem>
             </div>
-            <div className="flex items-center space-x-2">
-              <IoIosClose
-                className="h-8 w-8 text-white"
-                onClick={() => setOpen(!open)}
-              />
-            </div>
+            <IoIosClose
+              className="h-8 w-8 text-white cursor-pointer"
+              onClick={() => setOpen(false)}
+            />
           </div>
-          <div className="flex flex-col items-start justify-start gap-[14px] px-8">
-            <NavBarItem href="/" onClick={() => setOpen(false)}>
-              Home
-            </NavBarItem>
-            {navItems.map((navItem: any, idx: number) => (
-              <>
-                {navItem.children && navItem.children.length > 0 ? (
-                  <>
-                    {navItem.children.map((childNavItem: any, childIdx: number) => (
-                      <NavBarItem
-                        key={`link-${idx}-${childIdx}`}
-                        href={childNavItem.link}
-                        onClick={() => setOpen(false)}
-                      >
-                        {childNavItem.title}
-                      </NavBarItem>
-                    ))}
-                  </>
-                ) : (
-                  <NavBarItem
-                    key={`link-${idx}`}
-                    href={navItem.link}
-                    onClick={() => setOpen(false)}
-                    target={navItem.target}
-                  >
-                    {navItem.title}
-                  </NavBarItem>
-                )}
-              </>
+          <div className="flex flex-col w-full space-y-6 px-4 py-6">
+            <NavBarItem href="/">Home</NavBarItem>
+            {navItems.map((item: any) => (
+              <NavBarItem key={item.title} href={item.link} target={item.target}>
+                {item.title}
+              </NavBarItem>
             ))}
           </div>
-          <div className="flex flex-row w-full items-start gap-2.5 px-8 py-4">
+          <div className="flex flex-col w-full px-4 py-4 space-y-4">
             <CustomLink 
               href="https://calendly.com/ybelsonapple/30min"
               target="_blank"
-              className="no-underline"
+              className="no-underline w-full"
             >
-              <Button>Get a demo</Button>
+              <Button className="w-full">Get a demo</Button>
             </CustomLink>
             <Button
               variant="simple"
               as={Link}
               href="/login"
-              onClick={() => {
-                setOpen(false);
-              }}
+              className="w-full"
             >
               Login
             </Button>
