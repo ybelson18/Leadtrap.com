@@ -105,8 +105,14 @@ export const Hero = () => {
             Stop Chasing Leads.
           </span>
         </Heading>
-        <Subheading className="mt-6 max-w-xl mx-auto text-center text-base md:text-lg">
-          Use AI to push an endless stream of premium, ready-to-close leads straight from your website to your inbox, phone, and calendar.
+        <Subheading className="text-center mt-2 md:mt-6 max-w-3xl mx-auto relative z-10">
+          <span
+            className="text-muted-foreground block max-w-[750px] mx-auto text-center text-[1.125rem] md:text-[1.5rem] leading-8"
+            data-br=":R4l7puja:"
+            data-brr="1"
+          >
+            Use AI to push an endless stream of premium, ready-to-close leads straight from your website to your inbox, phone, and calendar.
+          </span>
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
           <div className="relative inline-flex items-center">
