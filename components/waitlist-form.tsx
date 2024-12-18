@@ -37,7 +37,7 @@ const WaitlistForm = () => {
   if (isSubmitted) {
     return (
       <div className="text-center">
-        <p className="text-green-500 text-lg font-medium">You've been added to the waitlist!</p>
+        <p className="text-green-500 text-lg font-medium">You&apos;ve been added to the waitlist!</p>
         <div className="text-sm text-neutral-400">We&apos;ll reach out when it&apos;s your turn.</div>
       </div>
     );
