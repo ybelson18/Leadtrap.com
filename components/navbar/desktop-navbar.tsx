@@ -78,13 +78,6 @@ export const DesktopNavbar = ({ navItems }: Props) => {
         <Button variant="simple" as={Link} href="/login">
           Login
         </Button>
-        <CustomLink 
-          href="https://calendly.com/ybelsonapple/30min"
-          target="_blank"
-          className="no-underline"
-        >
-          <Button>Get a demo</Button>
-        </CustomLink>
       </div>
     </motion.div>
   );

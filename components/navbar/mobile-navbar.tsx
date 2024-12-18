@@ -64,13 +64,6 @@ export const MobileNavbar = ({ navItems }: any) => {
             ))}
           </div>
           <div className="flex flex-col w-full px-4 py-4 space-y-4">
-            <CustomLink 
-              href="https://calendly.com/ybelsonapple/30min"
-              target="_blank"
-              className="no-underline w-full"
-            >
-              <Button className="w-full">Get a demo</Button>
-            </CustomLink>
             <Button
               variant="simple"
               as={Link}

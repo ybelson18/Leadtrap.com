@@ -40,18 +40,6 @@ export const Features = () => {
             }}
           >
             The ready-to-close leads we send to your inbox and calendar come with world-class data and insights that you need to close.
-            <div className="mt-3 md:mt-6 flex justify-center">
-              <CustomLink 
-                href="https://calendly.com/ybelsonapple/30min"
-                target="_blank"
-                className="no-underline"
-              >
-                <Button>
-                  <span>Get a demo</span>
-                  <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
-                </Button>
-              </CustomLink>
-            </div>
           </span>
         </h2>
 
