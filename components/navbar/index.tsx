@@ -9,11 +9,6 @@ const navItems = [
     link: "/features",
   },
   {
-    title: "Pricing",
-    link: "/pricing",
-  },
-
-  {
     title: "Blog",
     link: "/blog",
   },
