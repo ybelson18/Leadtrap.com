@@ -111,7 +111,7 @@ export const Hero = () => {
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 max-w-3xl mx-auto relative z-10">
           <span
-            className="text-muted-foreground block max-w-[750px] mx-auto text-center text-[1.125rem] md:text-[1.5rem] leading-8"
+            className="text-muted-foreground block max-w-[750px] mx-auto text-center text-[1.125rem] md:text-[1.5rem] leading-8 px-4 md:px-0"
             data-br=":R4l7puja:"
             data-brr="1"
           >
