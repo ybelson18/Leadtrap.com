@@ -116,6 +116,8 @@ export const Hero = () => {
             data-brr="1"
           >
             Use LeadTrap to turn your website visitors into a stream of highly researched, ready-to-close leads in your inbox, phone, and calendar.
+            <br />
+            Only pay for qualified leads.
           </span>
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
