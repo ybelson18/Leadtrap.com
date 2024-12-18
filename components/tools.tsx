@@ -159,7 +159,7 @@ export const Tools = () => {
             Stop chasing and start trapping. Our AI lead agent delivers qualified opportunities straight to your inbox daily, and then manages them for you.
           </Subheading>
           <p className="text-lg mt-4 font-semibold text-white text-center">
-            Plus, you'll only pay for the leads we send you.
+            Plus, you&apos;ll only pay for the leads we send you.
           </p>
         </div>
 
