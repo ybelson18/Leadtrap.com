@@ -24,9 +24,9 @@ const questions = [
   },
   {
     id: 4,
-    title: "How much does LeadTrap cost?",
+    title: "How does Pay Per Lead work?",
     description:
-      "Our pricing is based on lead volume, with three flexible plans: Starter ($299/month for 100 leads), Pro+ ($499/month for 300 leads), and Enterprise (custom pricing for unlimited leads). All plans include a 30-day free trial to experience LeadTrap's value before you commit.",
+      "You only ever have to pay us for the leads we generate. We calculate the pricing for this based off your industry and total website traffic, with discounts on high volume."
   },
   {
     id: 5,
@@ -47,16 +47,10 @@ const questions = [
       "For B2B leads, we have access to data on more than 300M+ business contacts, enriched with demographic, firmographic, and technographic details to provide a deep understanding of each lead. For consumer leads, we capture location data on all website visitors, geographic data enrichments, and their entire viewing session to understand their interests. Our super nerdy, proprietary AI then analyzes this data to provide intelligent lead scoring and insights.",
   },
   {
-    id: 8,
-    title: "What happens if I outgrow my plan?",
-    description:
-      "We love seeing our customers' businesses thrive! When you first outgrow your subscription, we'll automatically extend your capacity by up to 80% at no extra cost to keep your momentum going. If your success continues and you outgrow the plan again, we'll help you transition to a plan that matches your growing business, ensuring you can capture every valuable opportunity that comes your way.",
-  },
-  {
     id: 9,
     title: "Can LeadTrap integrate with my existing tools?",
     description:
-      "Yes! LeadTrap can send notifications and leads to your email, SMS, Slack, or WhatsApp. It's designed to fit seamlessly into your existing workflow while providing additional insights and automation capabilities. We will soon be rolling out CRM integrations as well.",
+      "Yes! LeadTrap can send notifications and leads to your email, SMS, calendar, Slack, or WhatsApp. It's designed to fit seamlessly into your existing workflow while providing additional insights and automation capabilities. We will soon be rolling out CRM integrations as well.",
   },
   {
     id: 10,
