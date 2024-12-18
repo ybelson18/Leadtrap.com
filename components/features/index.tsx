@@ -39,7 +39,7 @@ export const Features = () => {
               textWrap: 'balance'
             }}
           >
-            The ready-to-buy leads we send to your inbox and calendar come with world-class data and insights that you need to close.
+            The ready-to-close leads we send to your inbox and calendar come with world-class data and insights that you need to close.
             <div className="mt-3 md:mt-6 flex justify-center">
               <CustomLink 
                 href="https://calendly.com/ybelsonapple/30min"

@@ -102,9 +102,9 @@ export const Hero = () => {
             data-br=":R2l7puja:"
             data-brr="1"
           >
-            Turn Your Website{' '}
-            <span style={{ fontSize: '1.1em' }}>
-              into Premium Leads.
+            Premium Leads{' '}
+            <span style={{ fontSize: '1.0em' }}>
+              on Tap.
             </span>
           </span>
         </Heading>
@@ -114,7 +114,7 @@ export const Hero = () => {
             data-br=":R4l7puja:"
             data-brr="1"
           >
-            Use AI to turn your website visitors into a stream of highly researched, ready-to-close leads in your inbox, phone, and calendar.
+            Use LeadTrap to turn your website visitors into a stream of highly researched, ready-to-close leads in your inbox, phone, and calendar.
           </span>
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
