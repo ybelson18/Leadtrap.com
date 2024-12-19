@@ -2,6 +2,12 @@ import { supabase } from './supabase'
 
 export async function addToWaitlist(email: string) {
   try {
+    // Check if Supabase is properly configured
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      console.error('Supabase environment variables are not configured')
+      return { success: false, message: 'Service temporarily unavailable' }
+    }
+
     // Check if email already exists
     const { data: existingEmail } = await supabase
       .from('waitlist')
@@ -28,6 +34,6 @@ export async function addToWaitlist(email: string) {
     return { success: true }
   } catch (error) {
     console.error('Error adding to waitlist:', error)
-    throw error
+    return { success: false, message: 'Failed to add to waitlist' }
   }
 }
