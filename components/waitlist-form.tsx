@@ -14,6 +14,7 @@ const WaitlistForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
+    setMessage("");
 
     try {
       const response = await fetch("/api/waitlist", {
@@ -24,21 +25,34 @@ const WaitlistForm = () => {
         body: JSON.stringify({ email }),
       });
 
-      if (!response.ok) throw new Error("Failed to join waitlist");
+      const data = await response.json();
 
-      setIsSubmitted(true);
-      setEmail("");
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || "Failed to join waitlist");
+      }
+
+      if (data.message === "Email already registered") {
+        setIsSubmitted(true);
+        setMessage("You're already on the waitlist!");
+      } else {
+        setIsSubmitted(true);
+        setEmail("");
+      }
     } catch (error) {
       setStatus("error");
-      setMessage("Something went wrong. Please try again.");
+      setMessage(error instanceof Error ? error.message : "Something went wrong. Please try again.");
+    } finally {
+      setStatus("idle");
     }
   };
 
   if (isSubmitted) {
     return (
       <div className="text-center">
-        <p className="text-green-500 text-lg font-medium">You&apos;ve been added to the waitlist!</p>
-        <div className="text-sm text-neutral-400">We&apos;ll reach out when it&apos;s your turn.</div>
+        <p className="text-green-500 text-lg font-medium">
+          {message || "You've been added to the waitlist!"}
+        </p>
+        <div className="text-sm text-neutral-400">We'll reach out when it's your turn.</div>
       </div>
     );
   }
