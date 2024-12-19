@@ -1,21 +1,31 @@
 import { getSupabase } from './supabase'
 
 export async function addToWaitlist(email: string) {
+  console.log('Starting addToWaitlist with email:', email);
   try {
-    const supabase = getSupabase()
+    const supabase = getSupabase();
+    console.log('Supabase client initialized');
 
     // Check if email already exists
-    const { data: existingEmail } = await supabase
+    console.log('Checking for existing email...');
+    const { data: existingEmail, error: existingError } = await supabase
       .from('waitlist')
       .select('email')
       .eq('email', email)
-      .single()
+      .single();
+
+    if (existingError && existingError.code !== 'PGRST116') {
+      console.error('Error checking existing email:', existingError);
+      throw existingError;
+    }
 
     if (existingEmail) {
-      return { success: true, message: 'Email already registered' }
+      console.log('Email already exists:', email);
+      return { success: true, message: "Email already registered" };
     }
 
     // Add new entry
+    console.log('Adding new email entry...');
     const { error } = await supabase
       .from('waitlist')
       .insert([
@@ -23,13 +33,17 @@ export async function addToWaitlist(email: string) {
           email,
           created_at: new Date().toISOString()
         }
-      ])
+      ]);
 
-    if (error) throw error
+    if (error) {
+      console.error('Error inserting email:', error);
+      throw error;
+    }
 
-    return { success: true }
+    console.log('Successfully added email to waitlist');
+    return { success: true };
   } catch (error) {
-    console.error('Error adding to waitlist:', error)
-    return { success: false, message: 'Failed to add to waitlist' }
+    console.error('Error in addToWaitlist:', error);
+    return { success: false, message: 'Failed to add to waitlist' };
   }
 }

@@ -5,10 +5,13 @@ import { addToWaitlist } from "@/lib/waitlist-storage";
 export const dynamic = 'force-dynamic';
 
 export async function POST(request: Request) {
+  console.log('Waitlist API called');
   try {
     const { email } = await request.json();
+    console.log('Received email:', email);
     
     if (!email) {
+      console.log('No email provided');
       return NextResponse.json(
         { success: false, message: "Email is required" },
         { status: 400 }
@@ -16,6 +19,7 @@ export async function POST(request: Request) {
     }
 
     const result = await addToWaitlist(email);
+    console.log('Waitlist result:', result);
     
     if (!result.success) {
       return NextResponse.json(
