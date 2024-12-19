@@ -3,6 +3,10 @@ import { getSupabase } from './supabase'
 export async function addToWaitlist(email: string) {
   console.log('Starting addToWaitlist with email:', email);
   try {
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      throw new Error('Missing Supabase credentials');
+    }
+
     const supabase = getSupabase();
     console.log('Supabase client initialized');
 
@@ -16,7 +20,7 @@ export async function addToWaitlist(email: string) {
 
     if (existingError && existingError.code !== 'PGRST116') {
       console.error('Error checking existing email:', existingError);
-      throw existingError;
+      throw new Error(`Database error: ${existingError.message}`);
     }
 
     if (existingEmail) {
@@ -37,13 +41,16 @@ export async function addToWaitlist(email: string) {
 
     if (error) {
       console.error('Error inserting email:', error);
-      throw error;
+      throw new Error(`Database error: ${error.message}`);
     }
 
     console.log('Successfully added email to waitlist');
     return { success: true };
   } catch (error) {
     console.error('Error in addToWaitlist:', error);
-    return { success: false, message: 'Failed to add to waitlist' };
+    return { 
+      success: false, 
+      message: error instanceof Error ? error.message : 'Failed to add to waitlist'
+    };
   }
 }
