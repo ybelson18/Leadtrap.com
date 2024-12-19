@@ -5,7 +5,7 @@ import { addToWaitlist } from "@/lib/waitlist-storage";
 export const dynamic = 'force-dynamic';
 
 export async function POST(request: Request) {
-  console.log('Waitlist API called');
+  console.log('Waitlist API called - v2');  
   try {
     // Log environment variables (but not their values for security)
     console.log('Environment variables present:', {
