@@ -1,12 +1,8 @@
-import { supabase } from './supabase'
+import { getSupabase } from './supabase'
 
 export async function addToWaitlist(email: string) {
   try {
-    // Check if Supabase is properly configured
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-      console.error('Supabase environment variables are not configured')
-      return { success: false, message: 'Service temporarily unavailable' }
-    }
+    const supabase = getSupabase()
 
     // Check if email already exists
     const { data: existingEmail } = await supabase
