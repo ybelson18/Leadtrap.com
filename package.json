@@ -27,6 +27,8 @@
     "date-fns": "^3.6.0",
     "fast-glob": "^3.3.2",
     "framer-motion": "^11.2.11",
+    "google-spreadsheet": "^4.1.4",
+    "googleapis": "^144.0.0",
     "lucide-react": "^0.395.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.4",
