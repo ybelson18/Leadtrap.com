@@ -36,7 +36,7 @@ const WaitlistForm = () => {
 
       if (data.message === "Email already registered") {
         setIsSubmitted(true);
-        setMessage("You&apos;re already on the waitlist!");
+        setMessage("You're already on the waitlist!");
       } else {
         setIsSubmitted(true);
         setEmail("");
@@ -50,13 +50,20 @@ const WaitlistForm = () => {
     }
   };
 
+  const successMessage = message || "You've been added to the waitlist!";
+  const followUpMessage = "We'll reach out when it's your turn.";
+
   if (isSubmitted) {
     return (
       <div className="text-center">
-        <p className="text-green-500 text-lg font-medium">
-          {message || "You&apos;ve been added to the waitlist!"}
-        </p>
-        <div className="text-sm text-neutral-400">We&apos;ll reach out when it&apos;s your turn.</div>
+        <p 
+          className="text-green-500 text-lg font-medium"
+          dangerouslySetInnerHTML={{ __html: successMessage }}
+        />
+        <div
+          className="text-sm text-neutral-400"
+          dangerouslySetInnerHTML={{ __html: followUpMessage }}
+        />
       </div>
     );
   }
