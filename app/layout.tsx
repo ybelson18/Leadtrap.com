@@ -9,6 +9,7 @@ import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { LeadBot } from "@/components/lead-bot";
 import Script from "next/script";
+import { WaitlistProvider } from "@/components/waitlist-context";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -63,7 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <ViewTransitions>
-      <html lang="en" className={`${kalam.variable}`}>
+      <html lang="en" className={cn("antialiased", kalam.variable)}>
         <head>
           <script
             dangerouslySetInnerHTML={{
@@ -110,10 +111,12 @@ export default function RootLayout({
             "relative flex flex-col"
           )}
         >
-          <NavBar />
-          {children}
-          <Footer />
-          <LeadBot />
+          <WaitlistProvider>
+            <NavBar />
+            {children}
+            <Footer />
+            <LeadBot />
+          </WaitlistProvider>
           <Script
             src="https://app.leadtrap.ai/platform/script?partner_id=dfaacbca-1c96-4399-9b36-7c63c2707f16"
             strategy="afterInteractive"
