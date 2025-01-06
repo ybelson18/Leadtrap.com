@@ -153,7 +153,7 @@ export const Tools = () => {
       <motion.div className="flex flex-col gap-16 md:gap-24">
         <div>
           <Heading className="text-center text-white">
-            Lead. Trap. Match.
+            Lead. Trap. Close.
           </Heading>
           <Subheading className="text-center text-white">
             Stop chasing and start trapping. Our AI lead agent delivers qualified opportunities straight to your inbox daily, and then manages them for you.

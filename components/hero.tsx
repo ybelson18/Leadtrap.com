@@ -137,7 +137,7 @@ export const Hero = () => {
                 <Image
                   src={`/dashboard.png`}
                   alt="hero"
-                  height={1485} // Increased by 10%
+                  height={1350}
                   width={1920}
                   className={cn(
                     "mx-auto rounded-md transition-all duration-100",
