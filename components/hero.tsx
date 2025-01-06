@@ -129,6 +129,9 @@ export const Hero = () => {
 
       <Container>
         <div className="mt-10 md:mt-20">
+          <div className="text-center mb-4 text-xl md:text-2xl font-medium text-white">
+            Start getting leads that look like this 👇
+          </div>
           <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full">
             <div
               className="w-full relative overflow-x-hidden md:overflow-x-visible"
@@ -137,8 +140,8 @@ export const Hero = () => {
                 <Image
                   src={`/dashboard.png`}
                   alt="hero"
-                  height={1350}
-                  width={1920}
+                  height={600}
+                  width={1300}
                   className={cn(
                     "mx-auto rounded-md transition-all duration-100",
                     hasScrolled ? "" : "grayscale",
@@ -172,7 +175,7 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-auto md:h-[116.8rem] w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
+      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-auto w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
     >
       <Beam showBeam className="-top-1 block" />
       <div className="absolute h-40 w-full bottom-0 md:-bottom-10 inset-x-0 scale-[1.2] z-20 pointer-events-none bg-charcoal [mask-image:linear-gradient(to_top,white_30%,transparent)]" />
