@@ -128,11 +128,11 @@ export const Hero = () => {
       </Container>
 
       <Container>
-        <div className="mt-10 md:mt-20">
-          <div className="text-center mb-4 text-xl md:text-2xl font-medium text-white">
+        <div className="mt-0 md:mt-10">
+          <div className="text-center mb-8 text-xl md:text-2xl font-medium text-white">
             Start getting leads that look like this 👇
           </div>
-          <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full">
+          <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full mt-16">
             <div
               className="w-full relative overflow-x-hidden md:overflow-x-visible"
             >
