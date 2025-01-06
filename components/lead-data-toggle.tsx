@@ -39,10 +39,10 @@ const b2bEnrichments = [
   "Desired Features/Services",
   "Purchase Intent",
   "Lead Value",
-  "Preferred Communication Channel",
   "Decision-Making Process",
   "Growth or Expansion Plans",
-  "Emotional Sentiment",
+  "Property Valuations",
+  "CRE Portfolio Value",
   "And more..."
 ];
 
@@ -56,6 +56,7 @@ const b2cEnrichments = [
   "Age Range",
   "Geographic Location",
   "Neighborhood Information",
+  "Credit Score",
   "Current Weather",
   "Email Verification",
   "Browsing Interests",
@@ -77,7 +78,6 @@ const b2cEnrichments = [
   "Timeline Preferences",
   "Current Challenges",
   "Intent Strength",
-  "Emotional Sentiment",
   "Demographics",
   "Family or Personal Context",
   "Purchase History or Brand Loyalty",

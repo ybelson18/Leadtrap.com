@@ -103,9 +103,9 @@ export const Hero = () => {
             data-br=":R2l7puja:"
             data-brr="1"
           >
-            Premium Leads{' '}
+            Trap Premium Leads{' '}
             <span style={{ fontSize: '1.0em' }}>
-              on Tap.
+              On Your Website.
             </span>
           </span>
         </Heading>
