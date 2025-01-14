@@ -134,7 +134,7 @@ export const LeadDataToggle = () => {
             {isB2B ? "Premium B2B Lead Data" : "Proprietary B2C Insights"}
           </h2>
           <p className="text-neutral-400 text-center text-xl mb-16">
-            {isB2B ? "Our leads come with world-class data and insights so you can close" : "Our leads come with world-class data and insights so you can close"}
+            {isB2B ? "Hours of lead research done instantly, giving you the insights you need to close"}
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto">
