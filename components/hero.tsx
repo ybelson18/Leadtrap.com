@@ -127,12 +127,13 @@ export const Hero = () => {
         </div>
       </Container>
 
+      <div className="text-center -mb-16 md:-mb-24 text-xl md:text-2xl font-medium text-white">
+        Start turning your website visitors into leads that look like this 👇
+      </div>
+
       <Container>
-        <div className="mt-0 md:mt-10">
-          <div className="text-center mb-8 text-xl md:text-2xl font-medium text-white">
-            Start getting leads that look like this 👇
-          </div>
-          <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full mt-16">
+        <div className="mt-10 md:mt-20">
+          <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer md:-mt-20 w-full">
             <div
               className="w-full relative overflow-x-hidden md:overflow-x-visible"
             >
