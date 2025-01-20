@@ -91,7 +91,7 @@ export const Hero = () => {
         </div>
         <Heading
           as="h1"
-          className="text-5xl md:text-6xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10 leading-tight lg:leading-[1.2]"
+          className="text-5xl md:text-6xl lg:text-8xl font-semibold max-w-6xl mx-auto text-center mt-6 relative z-10 leading-[1] lg:leading-[1]"
         >
           <span
             className="text-white"
@@ -103,9 +103,11 @@ export const Hero = () => {
             data-br=":R2l7puja:"
             data-brr="1"
           >
-            Trap Premium Leads{' '}
-            <span style={{ fontSize: '1.0em' }}>
-              On Your Website.
+            <span 
+              style={{ fontSize: '0.73em' }}
+              className="block leading-[1.25] tracking-tight"
+            >
+              High-Quality Leads, Delivered to Your Inbox Automatically.{' '}
             </span>
           </span>
         </Heading>
@@ -115,7 +117,7 @@ export const Hero = () => {
             data-br=":R4l7puja:"
             data-brr="1"
           >
-            Turn website visitors into highly researched, ready-to-close leads delivered to your inbox, phone, and calendar.
+            Use LeadTrap to turn website visitors into qualified, ready-to-close leads delivered to your calendar.
             <br />
             Pay only for qualified leads.
           </span>
@@ -128,7 +130,7 @@ export const Hero = () => {
       </Container>
 
       <div className="text-center -mb-16 md:-mb-24 text-xl md:text-2xl font-medium text-white">
-      Ditch Forms, Bad Leads, and Missed Follow-Ups—Get Leads Like This Instead 👇
+      Ditch forms, missed follow-ups, and bad lead info—our AI agent delivers leads like this 👇
       </div>
 
       <Container>
