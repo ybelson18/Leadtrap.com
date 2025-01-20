@@ -141,8 +141,8 @@ export const Hero = () => {
                 <Image
                   src={`/dashboard.png`}
                   alt="hero"
-                  height={600}
-                  width={1300}
+                  height={420}
+                  width={910}
                   className={cn(
                     "mx-auto rounded-md transition-all duration-100",
                     hasScrolled ? "" : "grayscale",
