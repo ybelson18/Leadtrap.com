@@ -87,7 +87,7 @@ export const Hero = () => {
       <Container className="flex  flex-col items-center justify-center">
         <div className="flex justify-center items-center mb-1 text-[#00A0E9]">
           <span className="mr-2">●</span>
-          <span className="font-medium">Currently in Private Beta</span>
+          <span className="font-medium">Now Onboarding From Our Waitlist</span>
         </div>
         <Heading
           as="h1"
@@ -115,9 +115,9 @@ export const Hero = () => {
             data-br=":R4l7puja:"
             data-brr="1"
           >
-            Use LeadTrap to turn your website visitors into a stream of highly researched, ready-to-close leads in your inbox, phone, and calendar.
+            Turn website visitors into highly researched, ready-to-close leads delivered to your inbox, phone, and calendar.
             <br />
-            Only pay for qualified leads.
+            Pay only for qualified leads.
           </span>
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-10 relative z-10">
@@ -128,7 +128,7 @@ export const Hero = () => {
       </Container>
 
       <div className="text-center -mb-16 md:-mb-24 text-xl md:text-2xl font-medium text-white">
-        Start getting leads that look like this 👇
+      Ditch Forms, Bad Leads, and Missed Follow-Ups—Get Leads Like This Instead 👇
       </div>
 
       <Container>
