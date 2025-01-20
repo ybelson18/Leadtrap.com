@@ -135,7 +135,7 @@ export const Hero = () => {
         <div className="mt-20 md:mt-32">
           <div className="flex items-center justify-center relative p-2 md:p-20 cursor-pointer w-full">
             <div
-              className="w-full relative overflow-x-hidden md:overflow-x-visible"
+              className="w-full relative overflow-x-hidden md:overflow-x-visible max-w-[582px] mx-auto"
             >
               <Card translate={translate} scale={scale}>
                 <Image
@@ -144,7 +144,7 @@ export const Hero = () => {
                   height={420}
                   width={910}
                   className={cn(
-                    "mx-auto rounded-md transition-all duration-100 max-w-[70%]",
+                    "mx-auto rounded-md transition-all duration-100 max-w-[100%] w-full",
                     hasScrolled ? "" : "grayscale",
                     "h-auto object-contain md:object-cover md:object-top"
                   )}
@@ -176,7 +176,7 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-auto w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
+      className="max-w-4xl z-40 group -mt-12 mx-auto isolate group h-auto w-full border-4 border-neutral-900 p-2 md:p-2 bg-charcoal rounded-[30px] shadow-2xl relative"
     >
       <Beam showBeam className="-top-1 block" />
       <div className="absolute h-40 w-full bottom-0 md:-bottom-10 inset-x-0 scale-[1.2] z-20 pointer-events-none bg-charcoal [mask-image:linear-gradient(to_top,white_30%,transparent)]" />
