@@ -144,9 +144,9 @@ export const Hero = () => {
                   height={420}
                   width={910}
                   className={cn(
-                    "mx-auto rounded-md transition-all duration-100",
+                    "mx-auto rounded-md transition-all duration-100 max-w-[70%]",
                     hasScrolled ? "" : "grayscale",
-                    "w-full h-auto object-contain md:object-cover md:object-top"
+                    "h-auto object-contain md:object-cover md:object-top"
                   )}
                   draggable={false}
                   priority
